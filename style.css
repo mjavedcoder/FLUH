@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header{
+background-image: url("background.jpeg");
+background-size: cover;
+width: 100%;
+height: 100vh;
+background-position: center;
+
+}
+
+.nav{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: auto;
+    padding: 30px 0px;
+   
+    
+    
+}
+
+ .logo {
+    cursor: pointer;
+    border-radius: 30px;
+ }
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+    position:relative;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform:uppercase;
+}
+
+.nav ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: goldenrod;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    top:45%;
+    position: absolute;
+    text-align: center;
+    color: aliceblue;
+    transform: translateY(-50%);
+
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.content p {
+    font-weight: 100;
+    line-height: 20px;
+}
+
+button{
+    width: 200px;
+    margin:20px 20px;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+    background: transparent;
+    cursor: pointer;
+    border: 3px solid goldenrod;
+    position: relative;
+
+}
+
+span{
+    background: gray;
+    height: 100%;
+    width: 0%;
+    border-radius: 40px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+}
